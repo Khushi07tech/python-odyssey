@@ -1,13 +1,8 @@
-# ======= Features Announcement =======
-#An API for Quote generation
-#An API for memes
-#A GUI Interface for this project
-
 import random
 import time
-from Quotes_generator import print_quotes, fetch_quotes, get_user_input
+from apps.quotes_generator import print_quotes, fetch_quotes, get_user_input
 
-def AI_assistant (moods):
+def assistant (moods):
     match moods:
         case 1:
             return "Study Mood On!📚"
@@ -91,7 +86,7 @@ def chill_mood (chill):
             quotes = fetch_quotes(num_quotes)
             for quote in quotes:
                 print_quotes(quote)
-            return "💕"
+            return "Hope these helped!💕"
 
         case "analogy":
             analogies = ["If you wanna do something, stick to it like a lizard sticks to ceiling😂🦎",
@@ -111,7 +106,13 @@ def main ():
         time.sleep (1.75)
         print ("✨⭐💗✨⭐💗✨⭐💗✨⭐💗✨")
         time.sleep (0.4)
-        print ("Lets talk to an AI Assistant!")
+        print("   Your Interactive Guide to    ")
+        time.sleep(1)
+        print("  Study")
+        time.sleep(1)
+        print("         Health")
+        time.sleep(1)
+        print("                 & Tech Bliss   ")
         time.sleep (0.4)
         print ("✨⭐💗✨⭐💗✨⭐💗✨⭐💗✨")
         for x in reversed(range (1, 4)):
@@ -128,7 +129,7 @@ def main ():
 
         user_mood = int(input ("Enter (1-5): "))
         time.sleep (0.4)
-        print (AI_assistant(user_mood))
+        print (assistant(user_mood))
 
         time.sleep (0.75)
 

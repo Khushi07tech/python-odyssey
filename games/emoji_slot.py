@@ -18,6 +18,7 @@ def give_payout (row, bet):
         elif row [0] == '😜':
             return bet * 10
     return 0
+
 def main ():
     balance = 100
     while balance > 0:

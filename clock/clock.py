@@ -1,9 +1,9 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QHBoxLayout, QVBoxLayout, QLabel, QPushButton, QWidget, QStackedWidget
 from PyQt5.QtCore import Qt
-from DigitalClock import Digital_Clock
-from Stopwatch import Stopwatch
-from AlarmClock import Alarm_Clock
+from digital_clock import Digital_Clock
+from stopwatch import Stopwatch
+from alarm_clock import Alarm_Clock
 
 class MainWindow(QMainWindow):
     def __init__(self):

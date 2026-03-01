@@ -1,1 +1,0 @@
-words = ("apple", "banana", "orange", "cocunut", "pineapple")

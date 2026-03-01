@@ -1,5 +1,3 @@
-#TO DO: Validate if a type A user types something greater than highest
-#A number guessing game in python
 import random
 import time
 

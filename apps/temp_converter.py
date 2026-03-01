@@ -1,3 +1,4 @@
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QPushButton,
                              QVBoxLayout, QHBoxLayout, QLineEdit,
                              QLabel, QWidget)
@@ -25,6 +26,7 @@ class MainWindow(QMainWindow):
     def initUI(self):
         #Layout
         central_widget = QWidget()
+        self.header.setAlignment(Qt.AlignCenter)
         vbox = QVBoxLayout()
         vbox.addWidget(self.header)
         vbox.addWidget(self.label)
