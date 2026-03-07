@@ -1,7 +1,14 @@
+# --- Python Bytecode & Cache ---
 __pycache__/
 *.pyc
 *.pyo
-.env
-../.idea/
+
+# --- IDEs & Editors ---
+.idea/
 .vscode/
-../ABC.py
+
+# --- Environment & OS ---
+.env
+
+# --- Specific Files ---
+ABC.py
