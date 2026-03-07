@@ -8,9 +8,9 @@ def try_user_choice():
         else:
             return user_choice
     except ValueError:
-        print("Value Error:\nEnter a correct value as per the choices")
+        print("🙄Value Error:\nEnter a correct value as per the choices")
     except Exception as e:
-        print(f"Error:\n{e}")
+        print(f"😪Error:\n{e}")
 
 def checking(user_validated_choice, computer_choice, points):
     rules = {
@@ -21,22 +21,36 @@ def checking(user_validated_choice, computer_choice, points):
         "spock": ["scissors", "rock"]
     }
     if computer_choice in rules[user_validated_choice]:
-        print("You win! (+1) ")
+        print("🎀You win! (+1) ")
         points += 1
     elif user_validated_choice == computer_choice:
-        print("Tie!")
+        print("🤝Tie!")
     else:
-        print("You lose! (-1)")
+        print("🎃You lose! (-1)")
         points -= 1
 
     return points
 
 
-print("Rock | Paper | Scissors")
+print("Rock | Paper | Scissors | Lizard | Spock")
+print("""
+👀Game Rules:
+Scissors ✂️ cuts Paper 📄
+Paper 📄 covers Rock 🪨
+Rock 🗻 crushes Lizard 🦎
+Lizard 🦎 poisons Spock 🖖
+Spock 🖖 smashes Scissors ✂️
+Scissors ✂️ decapitates Lizard 🦎
+Lizard 🦎 eats Paper 📄
+Paper 📄 disproves Spock 🖖
+Spock 🖖 vaporizes Rock 🪨
+Rock 🗻 crushes Scissors ✂️
+""")
 points = 10
 
 while True:
-    print("====================================================")
+
+    print("✨💖🎀👀🌷🎀🌷💌🕊️✨🦋💗🌸🍓✨🌸🦢💌✨🌙🕯️📖✨🕊️")
     choices = ["rock", "paper", "scissors", "lizard", "spock"]
     computer_choice = random.choice(choices)
 
@@ -52,4 +66,4 @@ while True:
         if points <= 0:
             print("Game Over!")
             break
-        print("====================================================")
+        print("🌙💫🦢✨🌸🩰🎀🌷✨🩷🌸🎀🦋✨💖🍰🎀🌷🧁💖🎀🌷💌🕊️")
