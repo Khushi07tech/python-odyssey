@@ -156,7 +156,7 @@ class RPSLS(QWidget):
             self.winner_displaying_label.setText("You win!")
             self.winner_displaying_label.setStyleSheet("color: #4CAF50;")
             self.user_points += 1
-            self.user_points_label.setText("User Points: " + str(self.user_points))
+            self.user_points_label.setText(f"User Points: {self.user_points}")
         elif button_text == computer_choice:
             self.winner_displaying_label.setText("Tie!")
             self.winner_displaying_label.setStyleSheet("color: #E6B800;")
@@ -164,7 +164,7 @@ class RPSLS(QWidget):
             self.winner_displaying_label.setText("You lose!")
             self.winner_displaying_label.setStyleSheet("color: #FF4C4C;")
             self.comp_points += 1
-            self.comp_points_label.setText("Computer Points: " + str(self.comp_points))
+            self.comp_points_label.setText(f"Computer Points: {self.comp_points}")
 
     def show_rules(self):
         rules = (
